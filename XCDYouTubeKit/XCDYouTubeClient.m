@@ -16,6 +16,10 @@
 
 // Web
 //static NSString * _innertubeApiKey = @"AIzaSyAO_FJ2SlqU8Q4STEHLGCilw_Y9_11qcW8";
+
+// Android
+static NSString * _innertubeApiKey = @"AIzaSyA8eiZmM1FaDVjRy-df2KTyQ_vz_yYM39w";
+
 + (instancetype) defaultClient
 {
 	static XCDYouTubeClient *defaultClient;
