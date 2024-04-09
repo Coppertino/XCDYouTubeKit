@@ -470,7 +470,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = Scripts/analyzer.py;
+			shellScript = "Scripts/analyzer.py\n";
 		};
 		C249AAA519C045C400BA17AE /* Delete *.gcda files */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -719,6 +719,7 @@
 					"-Wno-pedantic",
 					"-Wno-unused-parameter",
 					"-Wno-partial-availability",
+					"-Wno-declaration-after-statement",
 				);
 			};
 			name = Debug;
@@ -792,6 +793,7 @@
 					"-Wno-pedantic",
 					"-Wno-unused-parameter",
 					"-Wno-partial-availability",
+					"-Wno-declaration-after-statement",
 				);
 			};
 			name = Release;

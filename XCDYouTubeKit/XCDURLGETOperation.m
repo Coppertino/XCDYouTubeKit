@@ -145,6 +145,7 @@
 		//statusCode is not 200 and isn't 206
 		//Bad server response
 		[self finish];
+		completionHandler(NSURLSessionResponseCancel);
 		return;
 	}
 	
@@ -153,6 +154,7 @@
 		// Does not support partial content so we will simply finish the operation.
 		// Continuing will cause us to download the entire file
 		[self finish];
+		completionHandler(NSURLSessionResponseCancel);
 		return;
 	}
 	
