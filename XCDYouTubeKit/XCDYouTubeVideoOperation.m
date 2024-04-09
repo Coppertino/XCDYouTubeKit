@@ -161,27 +161,26 @@ static NSError *YouTubeError(NSError *error, NSSet *regionsAllowed, NSString *la
 //		NSString *string = [NSString stringWithFormat:@"{'context': {'client': {'hl': 'en','clientName': 'ANDROID','clientVersion': '16.20','playbackContext': {'contentPlaybackContext': {'html5Preference': 'HTML5_PREF_WANTS'}}}},'contentCheckOk': true,'racyCheckOk': true,'videoId': '%@'}", self.videoIdentifier];
 //        NSData *postData = [string dataUsingEncoding:NSASCIIStringEncoding];
         
-        NSString *userAgent = @"com.google.android.youtube/17.31.35 (Linux; U; Android 11) gzip";
-        NSDictionary *cxt =  @{
-            @"context":
-                @{@"client":
-                      @{@"hl": @"en",
-                        @"clientName": @"ANDROID",
-                        @"clientVersion": @"17.31.35",
-                        @"androidSdkVersion": @30,
-                        @"userAgent": userAgent,
-                        @"timeZone": @"UTC"
-                      }
-                },
-            @"videoId": self.videoIdentifier,
-            @"contentCheckOk": @YES,
-            @"racyCheckOk": @YES,
-            @"playbackContext":
-                @{@"contentPlaybackContext":
-                      @{@"html5Preference":
-                            @"HTML5_PREF_WANTS"
-                      }
-                }
+        NSString *userAgent = @"com.google.android.youtube/18.11.34 (Linux; U; Android 11) gzip";
+        NSDictionary *cxt =  @{@"context":
+              @{@"client":
+                    @{@"hl": @"en",
+                      @"clientName": @"ANDROID",
+                      @"clientVersion": @"18.11.34",
+                      @"androidSdkVersion": @30,
+                      @"userAgent": userAgent,
+                      @"timeZone": @"UTC"
+                    }
+              },
+          @"videoId": self.videoIdentifier,
+          @"contentCheckOk": @YES,
+          @"racyCheckOk": @YES,
+          @"playbackContext":
+              @{@"contentPlaybackContext":
+                    @{@"html5Preference":
+                          @"HTML5_PREF_WANTS"
+                    }
+              }
         };
         
         NSData *postData = [NSJSONSerialization dataWithJSONObject:cxt options:0 error:nil];
