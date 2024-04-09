@@ -456,7 +456,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = Scripts/analyzer.py;
+			shellScript = "Scripts/analyzer.py\n";
 		};
 		C23803F31B3847C60022F240 /* Analyzer */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -666,7 +666,7 @@
 				CURRENT_PROJECT_VERSION = 52;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
-				DYLIB_CURRENT_VERSION = 2.15.2;
+				DYLIB_CURRENT_VERSION = 2.16;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
 				ENABLE_TESTABILITY = YES;
@@ -745,7 +745,7 @@
 				CURRENT_PROJECT_VERSION = 52;
 				DEFINES_MODULE = YES;
 				DYLIB_COMPATIBILITY_VERSION = 2.0.0;
-				DYLIB_CURRENT_VERSION = 2.15.2;
+				DYLIB_CURRENT_VERSION = 2.16;
 				DYLIB_INSTALL_NAME_BASE = "@rpath";
 				ENABLE_NS_ASSERTIONS = NO;
 				ENABLE_STRICT_OBJC_MSGSEND = YES;
