@@ -1,4 +1,4 @@
-#!/usr/bin/python
+#!/usr/bin/python3
 
 import glob, os, plistlib, sys
 
@@ -21,7 +21,7 @@ for result in results:
 		for diagnostic in plist['diagnostics']:
 			location = diagnostic['location']
 			path = plist['files'][location['file']]
-			print "%s:%s:%s: error: Static Anaylzer Issue: %s" % (path, location['line'], location['col'], diagnostic['description'])
+			print( path + ":" + location['line'] + ":" + location['col'] + ": error: Static Anaylzer Issue: " + diagnostic['description'])
 			exit_code = 1
 
 sys.exit(exit_code)
